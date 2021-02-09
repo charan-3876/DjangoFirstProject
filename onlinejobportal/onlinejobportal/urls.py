@@ -20,4 +20,5 @@ from jobportal.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Home,name="home"),
+    path('latestjob/',latest_job,name="latestjob")
 ]
