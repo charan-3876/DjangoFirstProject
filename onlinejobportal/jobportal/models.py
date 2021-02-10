@@ -11,4 +11,7 @@ class NewJobs(models.Model):
    postdate = models.DateTimeField(blank=True)
    lastdate = models.DateTimeField(blank=True)
    action = models.CharField(max_length=255)
+   
+   def __str__(self):
+      return self.title
 
