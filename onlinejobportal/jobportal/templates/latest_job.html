@@ -18,21 +18,17 @@
   </tr>
   </thead>
    <tbody>
+   {% for i in newjobs %}
+      <tr style="color:black">
+      <td>{{i.SerialNumber}}</td>
+      <td>{{i.company}} </td>
+      <td>{{i.title}}</td>
+      <td>{{i.postdate}}</td>
+      <td>{{i.lastdate}}</td>
+      <td>{{i.action}}</td>
+      </tr>
 
-{% for i in data %}
-
-  <tr style="color:black">
-      <td>{{forloop.counter}}</td>
-    <td>{{i.recruiter.company}} </td>
-    <td>{{i.title}}</td>
-      <td>{{i.location}}</td>
-      <td>{{i.start_date}}</td>
-      <td>{{i.end_date}}</td>
-      <td><a href="{% url 'login_user' %}">Login to apply</a>
-
-</tr>
-
-   {% endfor %}
+{% endfor %}
 
     </tbody>
 </table>
