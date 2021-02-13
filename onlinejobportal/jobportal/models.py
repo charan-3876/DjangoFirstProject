@@ -14,4 +14,30 @@ class NewJobs(models.Model):
    
    def __str__(self):
       return self.title
+   
+ class Rdetails(models.Model):
+
+   company = models.CharField(max_length=255)
+   firstname = models.CharField(max_length=255)
+   lastname = models.CharField(max_length=255)
+   emailid = models.CharField(max_length=255)
+   contact = models.IntegerField()
+   gender = models.CharField(max_length=255)
+   '''MALE = 'M'
+   FEMALE = 'F'
+   OTHERS = 'O'
+   GENDER_CHOICES = [
+        (MALE, 'Male'),
+        (FEMALE, 'Female'),
+        (OTHERS,'Others')
+   ]
+   gender = models.CharField(
+        max_length=2,
+        choices=GENDER_CHOICES,
+        default=MALE,
+    )'''
+
+
+   def __str__(self):
+      return self.company
 
