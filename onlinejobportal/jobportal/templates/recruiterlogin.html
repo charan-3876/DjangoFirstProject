@@ -4,57 +4,57 @@
 
 {% block body %}
 
-<center><marquee style = "font-family : 'Monotype Corsiva' ; font-size:20px;color :darkcyan
+<center><marquee style = "font-family : 'Georgia' ; font-size:20px;color :darkcyan
     ; background-color:black;font-weight : bold;margin-top:1%">Recruiters</marquee></center>
 
 {% for i in rdetails %}
-<centre style="font-family: 'Monotype';">Details</centre>
+<center>Details</center>
 <div class="row" style="margin-top:3%;margin-left:20%">
-    <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px">
+    <div class="col-md-6" style="font-family : 'initial' ; font-size:30px">
         Company
     </div>
-     <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;color:maroon">
+     <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;color:maroon">
        {{i.company}}
     </div>
 </div>
 <div class="row" style="margin-top:1%;margin-left:20%">
-    <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px">
+    <div class="col-md-6" style="font-family : 'initial' ; font-size:30px">
         First Name
     </div>
-     <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;color:maroon">
+     <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;color:maroon">
        {{i.firstname}}
     </div>
 </div>
 <div class="row" style="margin-top:1%;margin-left:20%">
-    <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px">
+    <div class="col-md-6" style="font-family : 'initial' ; font-size:30px">
         Last Name
     </div>
-     <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;color:maroon">
+     <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;color:maroon">
        {{i.lastname}}
     </div>
 </div>
 <div class="row" style="margin-top:1%;margin-left:20%">
-    <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;">
+    <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;">
         Email ID
     </div>
-     <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;color:maroon">
+     <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;color:maroon">
        {{i.emailid}}
     </div>
 </div>
 <div class="row" style="margin-top:1%;margin-left:20%">
-    <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;">
+    <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;">
        Contact NO.
     </div>
-     <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;color:maroon">
+     <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;color:maroon">
        {{i.contact}}
   </div>
 </div>
 <div class="row" style="margin-top:1%;margin-left:20%">
-    <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;">
-       Gender
+    <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;">
+       Designation
     </div>
-     <div class="col-md-6" style="font-family : 'Monotype Corsiva' ; font-size:30px;color:maroon">
-       {{i.gender}}
+     <div class="col-md-6" style="font-family : 'initial' ; font-size:30px;color:maroon">
+       {{i.designation}}
     </div>
 </div>
 {% endfor %}
