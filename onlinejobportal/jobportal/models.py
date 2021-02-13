@@ -22,7 +22,7 @@ class NewJobs(models.Model):
    lastname = models.CharField(max_length=255)
    emailid = models.CharField(max_length=255)
    contact = models.IntegerField()
-   gender = models.CharField(max_length=255)
+   designation = models.CharField(max_length=255)
    '''MALE = 'M'
    FEMALE = 'F'
    OTHERS = 'O'
