@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import NewJobs
+from . models import NewJobs,Rdetails,Alog
 from django.utils.html import format_html
 # Register your models here.
 class JobAdmin(admin.ModelAdmin):
@@ -14,3 +14,5 @@ class JobAdmin(admin.ModelAdmin):
     list_editable= ('action',)
 
 admin.site.register(NewJobs)
+admin.site.register(Rdetails)
+admin.site.register(Alog)
