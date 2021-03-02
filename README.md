@@ -1,4 +1,6 @@
 This is the basic static webpage project.Used Django web framework which was written in python language.
+
+
     Introduction:
     *Job portal is an application which connects employer and job seekers where employers are the source of the resources and the job seeker can find and apply for their targeted      job.
     *This website can be also providing information about online job.
